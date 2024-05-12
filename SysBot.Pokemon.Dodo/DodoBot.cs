@@ -59,8 +59,8 @@ namespace SysBot.Pokemon.Dodo
             EchoUtil.Forwarders.Add(msg => { if (msg.Contains("团")) SendChannelMessage(msg, channelId); });
             EchoUtil.Forwarders.Add(msg => { if (msg.Contains("打")) SendChannelMessage(msg, channelId); });
             if (string.IsNullOrWhiteSpace(channelId)) return;
-            //SendChannelMessage("欢迎使用传火机器人！", channelId);
-            SendChannelMessageAll("欢迎使用传火机器人！", channelId);
+            //SendChannelMessage("欢迎使用毛毛虫机器人！\r\n探侦匕首已掷出！🤖👉🔪🤖\r\n非法操作，一概禁止！\U0001f91c⚡💍⚡🤖\U0001f91b\r\n你！已被！剥夺！力量！\U0001f91c⚡💍⚡\U0001f91b\r\n爬过来受死！🖐🐍\U0001f91a\r\n看招🙋✂✂✂\r\n你无路可逃！💘💘💘💘！", channelId);
+            SendChannelMessageAll("欢迎使用毛毛虫机器人！\r\n探侦匕首已掷出！🤖👉🔪🤖\r\n非法操作，一概禁止！\U0001f91c⚡💍⚡🤖\U0001f91b\r\n你！已被！剥夺！力量！\U0001f91c⚡💍⚡\U0001f91b\r\n爬过来受死！🖐🐍\U0001f91a\r\n看招🙋✂✂✂\r\n你无路可逃！💘💘💘💘！", channelId);
             var Msg = "";
             if (!DodoBot<T>.Info.Hub.Config.Legality.AllowUseFile)
             {
