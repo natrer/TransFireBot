@@ -524,17 +524,17 @@ namespace SysBot.Pokemon
                 }
             }
 
-            s += (rare > 0) ? $"Rare Candy x{rare}\n" : "";
-            s += (l > 0) ? $"Exp. Candy L x{l}\n" : "";
-            s += (xl > 0) ? $"Exp. Candy XL x{xl}\n" : "";
-            s += (abilitycapsule > 0) ? $"Ability Capsule x{abilitycapsule}\n" : "";
-            s += (bottlecap > 0) ? $"Bottle Cap x{bottlecap}\n" : "";
-            s += (abilitypatch > 0) ? $"Ability Patch x{abilitypatch}\n" : "";
-            s += (sweetherba > 0) ? $"Sweet Herba Mystica x{sweetherba}\n" : "";
-            s += (saltyherba > 0) ? $"Salty Herba  Mystica x{saltyherba}\n" : "";
-            s += (sourherba > 0) ? $"Sour Herba  Mystica x{sourherba}\n" : "";
-            s += (bitterherba > 0) ? $"Bitter Herba  Mystica x{bitterherba}\n" : "";
-            s += (spicyherba > 0) ? $"Spicy Herba  Mystica x{spicyherba}\n" : "";
+            s += (rare > 0) ? $"神奇糖果 x{rare}\n" : "";
+            s += (l > 0) ? $"经验糖果 L x{l}\n" : "";
+            s += (xl > 0) ? $"经验糖果 XL x{xl}\n" : "";
+            s += (abilitycapsule > 0) ? $"特性胶囊 x{abilitycapsule}\n" : "";
+            s += (bottlecap > 0) ? $"银色王冠 x{bottlecap}\n" : "";
+            s += (abilitypatch > 0) ? $"特性膏药 x{abilitypatch}\n" : "";
+            s += (sweetherba > 0) ? $"秘传：甜味料 x{sweetherba}\n" : "";
+            s += (saltyherba > 0) ? $"秘传：咸味料 x{saltyherba}\n" : "";
+            s += (sourherba > 0) ? $"秘传：酸味料 x{sourherba}\n" : "";
+            s += (bitterherba > 0) ? $"秘传：苦味料 x{bitterherba}\n" : "";
+            s += (spicyherba > 0) ? $"秘传：辣味料 x{spicyherba}\n" : "";
 
             return s;
         }
