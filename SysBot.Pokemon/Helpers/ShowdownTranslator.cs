@@ -213,6 +213,12 @@ namespace SysBot.Pokemon
                 result += "\n.PID=$Shiny0";
                 zh = zh.Replace("方闪", "");
             }
+                else if (zh.Contains("神兽闪"))
+            {
+                result += "\n.PID=$Shiny1";
+                zh = zh.Replace("神兽闪", "");
+            }
+          
 
             // 添加头目
             if (typeof(T) == typeof(PA8) && zh.Contains("头目"))
@@ -302,7 +308,7 @@ namespace SysBot.Pokemon
             {
                 if (zh.ToUpper().Contains("6V"))//默认
                 {
-                    result += "\n.IVs=31";
+                    result += "\n.IV_ATK=31\r\n.IV_DEF=31\r\n.IV_HP=31\r\n.IV_SPA=31\r\n.IV_SPD=31\r\n.IV_SPE=31\r\n.HyperTrainFlags=0";
                     zh = zh.Replace("6V", "");
                 }
                 else if (zh.ToUpper().Contains("5V0攻"))
@@ -456,6 +462,16 @@ namespace SysBot.Pokemon
             {
                 result += "\n.Scale=0";
                 zh = zh.Replace("体型XXXS", "");
+            }
+              else if (zh.Contains("最大身高"))
+            {
+                result += "\n.HeightScalar=255";
+                zh = zh.Replace("最大身高", "");
+            }
+            else if (zh.Contains("最小身高"))
+            {
+                result += "\n.HeightScalar=0";
+                zh = zh.Replace("最小身高", "");
             }
 
             //补充后天获得的全奖章
