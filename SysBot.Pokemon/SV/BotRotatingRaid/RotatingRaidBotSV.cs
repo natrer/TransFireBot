@@ -495,7 +495,7 @@ namespace SysBot.Pokemon
                 if (!status)
                 {
                     Settings.AddCompletedRaids();
-                    EchoUtil.Echo("打赢了");
+                    EchoUtil.Echo("呦，打赢了💘💘💘\r\n干的漂亮，野狼多摩！💘💘💘\r\n本大爷果然还是强，能带动你！💘💘💘");
                     WinCount++;
                     if (trainers.Count > 0 && Settings.CatchLimit != 0)
                         ApplyPenalty(trainers);
@@ -506,7 +506,7 @@ namespace SysBot.Pokemon
                 }
                 else
                 {
-                    EchoUtil.Echo("666,打输了");
+                    EchoUtil.Echo("杂鱼杂鱼杂鱼,这都能打输了！！\r\n行不行啊你们这群杂鱼！✂✂✂\r\n下次看本大爷的，你们还早2万年呢！✂✂✂");
                     LossCount++;
                 }
 
@@ -926,7 +926,7 @@ namespace SysBot.Pokemon
                 return (false, lobbyTrainers);
             }
             Log($"Raid #{RaidCount} 开始了!");
-            EchoUtil.Echo("开始太晶团体战");
+            EchoUtil.Echo("开始太晶团体战\r\n看本大爷用刺耳声凸(艹皿艹 )死敌羞🔥🔥🔥");
             if (EmptyRaid != 0)
                 EmptyRaid = 0;
             return (true, lobbyTrainers);
